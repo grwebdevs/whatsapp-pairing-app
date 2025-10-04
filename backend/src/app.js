@@ -6,6 +6,7 @@ import { makeWASocket, useMultiFileAuthState, fetchLatestBaileysVersion, Disconn
 import qrcode from 'qrcode-terminal';
 import { v4 as uuidv4 } from 'uuid';
 import rateLimit from 'express-rate-limit';
+import Boom from '@hapi/boom';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
