@@ -16,7 +16,8 @@ services:
     build: ./frontend
     container_name: whatsapp-pairing-frontend
     restart: unless-stopped
-    # No port mapping - Coolify will assign one automatically
+    ports:
+      - "30001:80"   Using a high port number
     depends_on:
       - backend
     networks:
