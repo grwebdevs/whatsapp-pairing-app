@@ -17,7 +17,7 @@ services:
     container_name: whatsapp-pairing-frontend
     restart: unless-stopped
     ports:
-      - "30001:80"   Using a high port number
+      - "30001:80"
     depends_on:
       - backend
     networks:
